@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    padding: 16px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        height: 50px;
+        .logo {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3B3A51;
+            border-radius: 100px;
+        }
+    }
+
+    .pages-links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+        .link {
+            padding: 10px;
+            border-radius: 10px;
+            &:hover {
+                background: #1A1C23;
+                transition: all ease 0.3s;
+            }
+        }
+    }
+}
